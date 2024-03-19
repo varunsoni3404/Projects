@@ -1,0 +1,16 @@
+<% include ./partials/header.ejs %>
+
+    <div class="w-full min-h-screen bg-zinc-800 px-10 py-5 text-white">
+        <% posts.forEach((post, index)=> { %>
+            <div class="mb-8 border-b-2 border-gray-700 pb-4">
+                <h1 class="text-5xl mb-4 font-medium">
+                    <%= post.title %>
+                </h1>
+                <p class="mb-4 text-xl font-normal">
+                    <%= post.content %>
+                </p>
+            </div>
+            <% }) %>
+    </div>
+
+    <% include ./partials/footer.ejs %>
